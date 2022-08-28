@@ -16,12 +16,6 @@
 <body class="container">
   <h1>Aulas de Laboratório de engenharia</h1>
   <div>
-    <select class="form-select" aria-label="Default select example">
-        <option selected>Selecionar o desafio</option>
-        <option id="JogoAdivinha"><a href="/desafio1/JogoAdivinha.html">Jogo de Adivinha</a></option>
-        <option value="MostrarData"><a  href="/Aula 2/MostrarData.html">Mostrar data</a></option>
-        <option value="MostrarHora"><a  href="/Aula 2/MostrarData.html">Mostrar hora em tempo real</a></option>
-      </select>
     <ul>
         <li id="JogoAdivinha"><a href="/desafio1/JogoAdivinha.html">Jogo de Adivinha</a></li>
         <li><a  href="/Aula 2/MostrarData.html">Mostrar data</a></li>
