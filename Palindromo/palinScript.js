@@ -1,4 +1,4 @@
-const button = document.querySelector('#buton');
+/*const button = document.querySelector('#buton');
 const resultText = document.querySelector('#result');
 
 function invertText(text) {
@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
     result
         ? resultText.innerHTML = 'O texto é um palídromo'
         : resultText.innerHTML = 'O texto não é um palídromo';
-});
+});*/
 
 function isPalidrome1(string) {
     let arrayString = [...string];
