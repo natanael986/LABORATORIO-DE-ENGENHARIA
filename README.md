@@ -32,7 +32,7 @@
     </div>
   </nav>
   <div class="containner">
-    <div class="mt-10 d-grid gap-2 d-md-flex justify-content-md-center">
+    <div class="mt-3 d-grid gap-2 d-md-flex justify-content-md-center">
       <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Acessar atividades</a>
     </div>
   </div>
