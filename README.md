@@ -13,7 +13,7 @@
 </head>
 
 <body class="container">
-  <img src="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg"
+  <img src="/img/foto.jpeg"
   <div class="mt-3 d-grid gap-2 d-md-flex justify-content-md-center">
     <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Acessar atividades</a>
   </div>
