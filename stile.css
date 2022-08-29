@@ -6,3 +6,8 @@ A {
 img {
     border-radius: 50%;
 }
+
+p {
+    margin-top: 50%;
+    font-size: 230%;
+}
