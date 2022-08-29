@@ -12,16 +12,30 @@
   
 </head>
 
-<body class="container">
-  <h1>Aulas de Laboratório de engenharia</h1>
-  <div>
-    <ul>
-        <li id="JogoAdivinha"><a href="/LABORATORIO-DE-ENGENHARIA/desafio1/JogoAdivinha.html">Jogo de Adivinha</a></li>
-        <li><a  href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarData.html">Mostrar data</a></li>
-        <li><a  href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarData.html">Mostrar hora em tempo real</a></li>
-    </ul>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color: #3b8f4293;">
+    <div class="container-fluid">
+      <a class="navbar-brand color-ligth" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">LAB. DE ENGENHARIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"><img src="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg"
+             alt="sou eu natanael986" text="sou eu natanael986" width=50 height=40>
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="containner">
+    <div class="mt-10 d-grid gap-2 d-md-flex justify-content-md-center">
+      <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Acessar atividades</a>
+    </div>
   </div>
-
 </body>
 
 </html>
