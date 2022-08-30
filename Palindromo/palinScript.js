@@ -1,4 +1,4 @@
-var el = document.getElementById("btVerificar");
+let el = document.getElementById("btVerificar");
 el.addEventListener("click", isPalindromo, false);
 
 function isPalindromo() {
