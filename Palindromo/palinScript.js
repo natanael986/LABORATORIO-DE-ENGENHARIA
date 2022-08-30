@@ -1,6 +1,6 @@
-/*const button = document.querySelector('#buton');
+const button = document.querySelector('#buton');
 const resultText = document.querySelector('#result');
-
+/*
 function invertText(text) {
     const changedText = text.split('').reverse().join('');
     return text === changedText ? true : false;
@@ -15,9 +15,9 @@ button.addEventListener('click', () => {
         : resultText.innerHTML = 'O texto não é um palídromo';
 });*/
 
-function isPalidrome1(string) {
-    let arrayString = [...string];
-    let numOfLetters = string.length - 1;
+function isPalidrome1(button) {
+    let arrayString = [...button];
+    let numOfLetters = button.length - 1;
     let isPalidrome = '<div class="alert alert-success d-flex align-items-center" role="alert"><svg class="bi flex-shrink-0 me-2" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg><div>O texto é um palídromo</div></div>';
 
     for (let i = numOfLetters, j = 0; i >= 0; i--, j++) {
