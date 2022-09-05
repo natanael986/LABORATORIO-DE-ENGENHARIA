@@ -1,7 +1,7 @@
 let btnAdicionar = document.getElementById("btnAdicionar");
 btnAdicionar.addEventListener("click", function () {
     
-    document.getElementById("txtarray").innerHTML = "TESTE";
+    document.getElementById("txtarray").innerHTML = "btnAdicionar";
 
     // let elementos = [];
     // let valor = document.getElementById("valor").value;
