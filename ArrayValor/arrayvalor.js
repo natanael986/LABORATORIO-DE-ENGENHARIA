@@ -1,21 +1,19 @@
 let btnAdicionar = document.getElementById("btnAdicionar");
 btnAdicionar.addEventListener("click", function () {
-    
-    document.getElementById("txtarray").innerHTML = "btnAdicionar";
 
-    // let elementos = [];
-    // let valor = document.getElementById("valor").value;
-    // elementos.push(valor.toString());
+    let elementos = [];
+    let valor = document.getElementById("valor").value;
+    elementos.push(valor.toString());
 
-    // let elementoOL = document.createElement("OL");
-    // elementos.forEach(element => {
-    //     let elementLI = document.createElement("LI");
-    //     let textNode = document.createTextNode(element);
-    //     elementLI.appendChild(textNode);
+    let elementoOL = document.createElement("OL");
+    elementos.forEach(element => {
+        let elementLI = document.createElement("LI");
+        let textNode = document.createTextNode(element);
+        elementLI.appendChild(textNode);
 
-    //     elementoOL.appendChild(elementLI);
-    // });
+        elementoOL.appendChild(textNode);
+    });
 
-    // document.body.appendChild(elementoOL);
+    document.body.appendChild(elementoOL);
 
 });
