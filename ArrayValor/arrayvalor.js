@@ -1,7 +1,5 @@
 let btnAdicionar = document.getElementById("btnAdicionar");
-let valor = document.querySelector('.valor');
 btnAdicionar.addEventListener("click", function () {
-    valor.focus();
 
     let elementos = [];
     let valor = document.getElementById("valor").value;
