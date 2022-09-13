@@ -1,40 +1,67 @@
+a {
+  text-decoration: none;
+}
+
 img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .data {
-    font-size: 230%;
+  font-size: 230%;
 }
 
 .hora {
-    margin-top: 40%;
-    font-size: 1000%;
-    color:rgb(36, 100, 41)
+  margin-top: 40%;
+  font-size: 1000%;
+  color: rgb(78, 94, 187)
 }
 
 .mod {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 /* Show it is fixed to the top */
 body {
-    background-color: rgb(70, 70, 70);
-    min-height: 75rem;
-    padding-top: 4.5rem;
-  }
-  
-  .search {
-    width: 400px;
-    margin-right: 10rem;
-  }
+  background-color: rgb(47, 46, 48);
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+
+.search {
+  width: 400px;
+  margin-right: 10rem;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
 .contFooter {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 
-    margin-left: 30rem;
-  }
+  margin-left: 30rem;
+}
+
+/*CUSTOMIZAR PLAYER*/
+.customPlayer {
+  margin-left: 35%;
+  margin-right: 30%;
+  margin-top: 2px;
+}
+.customIcon {
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+
+  color: #0080FF;
+
+  justify-content: absolute;
+  align-items: center;
+}
+
+.sumirPlayer {
+  position: absolute;
+  top: 0;
+}
