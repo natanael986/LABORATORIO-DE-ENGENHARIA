@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!--SCRIPT BABEL-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>Introdução</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function typeWrite(element) {
+            const elemento = element.innerHTML.split('');
+            element.innerHTML = '';
+            elemento.forEach((letra, i) => {
+                setTimeout(() => element.innerHTML += letra, 75 * i);
+            }); "Venha estudar na Fatec!!!"
+
+            const element = (
+                <div>
+                    <h1>Venha estudar na Fatec!!!</h1>
+                </div>
+            );
+
+            ReactDOM.render(elemento, document.getElementById('root'));
+        }
+        const frase = document.querySelector('h1');
+        setInterval(typeWrite)
+    </script>
+</body>
+
+</html>
