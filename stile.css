@@ -45,6 +45,7 @@ body {
 
 /*CUSTOMIZAR PLAYER*/
 .customPlayer {
+  margin-left: 1%;
   margin-top: 2px;
 }
 .customIcon {
