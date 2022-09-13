@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body onload="horarioAtual()">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand color-ligth" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">LAB. DE ENGENHARIA</a>
@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">Inicio</a>
                     </li>
                     <li>
                         <a href="#" class="nav-link d-block link-light text-decoration-none dropdown-toggle"
@@ -99,7 +99,7 @@
     </nav>
     <div class="container">
         <div class="d-grid gap-2 col-6 mx-auto">
-            <h1 class="hora" id="rel" onload="horarioAtual()"></h1>
+            <h1 class="hora" id="rel"></h1>
         </div>
 
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
