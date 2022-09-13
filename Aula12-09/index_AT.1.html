@@ -18,7 +18,7 @@
 
 <body>
     <div id="root"></div>
-
+    <h1>Venha estudar na Fatec!!!</h1>
     <script type="text/babel">
         function typeWrite(element) {
             const elemento = element.innerHTML.split('');
@@ -33,10 +33,10 @@
                 </div>
             );
 
-            ReactDOM.render(elemento, document.getElementById('root'));
+            //ReactDOM.render(elemento, document.getElementById('root'));
         }
         const frase = document.querySelector('h1');
-        setInterval(typeWrite)
+        setInterval(frase)
     </script>
 </body>
 
