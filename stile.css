@@ -16,3 +16,14 @@ img {
     font-size: 1000%;
     color:rgb(36, 100, 41)
 }
+
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+  }
+  
+  .search {
+    width: 400px;
+    margin-right: 10rem;
+  }
