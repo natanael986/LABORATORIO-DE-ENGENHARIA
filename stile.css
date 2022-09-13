@@ -26,9 +26,8 @@ body {
   padding-top: 4.5rem;
 }
 
-.search {
-  width: 400px;
-  margin-right: 10rem;
+.navB {
+  margin-left: 82rem;
 }
 
 /* Custom page CSS
@@ -44,16 +43,25 @@ body {
 }
 
 /*CUSTOMIZAR PLAYER*/
-.customPlayer {
-  margin-left: 1%;
-  margin-top: 2px;
+
+.espacamento {
+  border-radius: 100px;
+  padding-left: 5px;
 }
+
+.customPlayer {
+  position: fixed;
+  top: 27%;
+  list-style: none;
+}
+
 .customIcon {
-  width: 100px;
+  width: 50px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 100%;
 
   color: #0080FF;
+  background-color: black;
 
   justify-content: absolute;
   align-items: center;

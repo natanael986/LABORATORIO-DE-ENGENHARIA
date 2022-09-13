@@ -46,7 +46,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <ul class="navbar-nav me-auto mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
                                 href="/LABORATORIO-DE-ENGENHARIA/inicio.html">Inicio</a>
@@ -109,23 +109,32 @@
     </header>
 
     <main>
-        <div class="customPlayer">
-            <a onclick="document.getElementById('player').play()">
-                <ion-icon class="customIcon" name="play-circle-outline"></ion-icon>
-            </a>
-            <a onclick="document.getElementById('player').pause()">
-                <ion-icon class="customIcon" name="pause-circle-outline"></ion-icon>
-            </a>
-            <a onclick="document.getElementById('player').volume+=0.1">
-                <ion-icon class="customIcon" name="add-circle-outline"></ion-icon>
-            </a>
-            <a onclick="document.getElementById('player').volume-=0.1">
-                <ion-icon class="customIcon" name="remove-circle-outline"></ion-icon>
-            </a>
-        </div>
+        <ul class="customPlayer espacamento">
+            <li>
+                <a onclick="document.getElementById('player').play()">
+                    <ion-icon class="customIcon" name="play-circle-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a onclick="document.getElementById('player').pause()">
+                    <ion-icon class="customIcon" name="pause-circle-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a onclick="document.getElementById('player').volume+=0.1">
+                    <ion-icon class="customIcon" name="add-circle-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a onclick="document.getElementById('player').volume-=0.1">
+                    <ion-icon class="customIcon" name="remove-circle-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
 
         <audio class="sumirPlayer" id="player" autoplay="autoplay" controls="controls">
-            <source src="/LABORATORIO-DE-ENGENHARIA/musica/EVANGELION OPENING TRAP REMIX EXTENDED VERSION (a cruel angel thesis remix).mp4"
+            <source
+                src="/LABORATORIO-DE-ENGENHARIA/musica/EVANGELION OPENING TRAP REMIX EXTENDED VERSION (a cruel angel thesis remix).mp4"
                 type="audio/mp3" />
         </audio>
     </main>
