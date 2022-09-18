@@ -15,7 +15,7 @@
 <body class="container">
   <img src="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA/blob/main/img/foto.jpeg"
   <div class="mt-3 d-grid gap-2 d-md-flex justify-content-md-center">
-    <a href="/LABORATORIO-DE-ENGENHARIA/index.html" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Acessar atividades</a>
+    <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="btn btn-success" tabindex="-1" role="button" aria-disabled="true">Acessar atividades</a>
   </div>
 </body>
 
