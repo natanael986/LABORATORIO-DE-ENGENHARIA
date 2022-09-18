@@ -1,4 +1,8 @@
 let btnAdicionar = document.getElementById("btnAdicionar");
+let valores = document.getElementById("valores");
+let campoValor = document.querySelector('.campoValor');
+campoValor.focus();
+
 btnAdicionar.addEventListener("click", function () {
 
     let elementos = [];
@@ -12,8 +16,11 @@ btnAdicionar.addEventListener("click", function () {
         elementLI.appendChild(textNode);
 
         elementoOL.appendChild(textNode);
+
+        campoValor.value = '';
+        campoValor.focus();
     });
 
-    document.body.appendChild(elementoOL);
+    valores.appendChild(elementoOL);
 
 }); 

@@ -30,6 +30,31 @@ body {
   margin-left: 82rem;
 }
 
+/*Scroll bar*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0080FF black;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #0080FF;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+/*fim scroll bar*/
+
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -70,4 +95,22 @@ body {
 .sumirPlayer {
   position: absolute;
   top: 0;
+}
+
+/*icon de top*/
+.customButtom {
+  position: fixed;
+  top: 94%;
+  left: 95%;
+  margin-right: 1rem;
+}
+
+
+/*footer fixed*/
+
+.endpage {
+  position: fixed;
+  bottom: 0%;
+  margin-bottom: 0%;
+
 }

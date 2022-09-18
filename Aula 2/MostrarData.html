@@ -10,11 +10,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/LABORATORIO-DE-ENGENHARIA/stile.css" media="screen" />
+    <!--<link rel="stylesheet" type="text/css" href="/stile.css" media="screen" />-->
+
 
     <link href="/LABORATORIO-DE-ENGENHARIA/bootstrap.min.css" rel="stylesheet">
 
-    <link href="/LABORATORIO-DE-ENGENHARIA/stile.css" rel="stylesheet">
 
 
 
@@ -34,87 +34,38 @@
                 font-size: 3.5rem;
             }
         }
+
+        .positionTextLeft {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            float: left;
+        }
+
+        .DataHeight {
+            font-size: 100px;
+            margin-right: 100px;
+        }
     </style>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand color-ligth" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">LAB. DE ENGENHARIA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link d-block link-light text-decoration-none dropdown-toggle"
-                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                            Atividades
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-macos mx-0 border-0 shadow"
-                            style="width: 220px; left: 52.5%">
-                            1º Bimestre
-                            <li><a class="dropdown-item" href="/LABORATORIO-DE-ENGENHARIA/desafio1/JogoAdivinha.html">
-                                    Jogo de Adivinha
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item" href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarData.html">
-                                    Mostrar data
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item" href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarHora.html">
-                                    Mostrar hora em tempo real
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item" href="/LABORATORIO-DE-ENGENHARIA/Palindromo/palindromo.html">
-                                    Palindromo
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item" href="/LABORATORIO-DE-ENGENHARIA/ArrayValor/arrayvalor.html">
-                                    Array de valores
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item" href="/LABORATORIO-DE-ENGENHARIA/Aula12-09/index_AT.1.html">
-                                    Animação de escrita
-                                </a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            2º Bimestre
-                            <li><a class="dropdown-item disabled" href="#">...</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav mb-lg-0">
-                    <a class="nav-link iconlogin" href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"><img
-                            src="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg" alt="sou eu natanael986" width=50 height=40>
-                        GitHub
-                    </a>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
+
     <div class="container">
-        <div class="row">
-            <div class=" data d-grid gap-2 col-9 mx-auto mt-5">
+        <div class="positionTextLeft">
+            <div class="DataHeight">
                 <p><span id="dia_se"></span>, <span id="dia"></span> de <span id="mes"></span> de <span id="ano"></span>
                 </p>
-            </div>
-
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="btn btn-success" tabindex="-1" role="button"
-                    aria-disabled="true">voltar</a>
             </div>
         </div>
     </div>
 
     <script src="/LABORATORIO-DE-ENGENHARIA/bootstrap.bundle.min.js"></script>
+
+    <script src="/LABORATORIO-DE-ENGENHARIA/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/LABORATORIO-DE-ENGENHARIA/layout.js"></script>
 
 
 </body>

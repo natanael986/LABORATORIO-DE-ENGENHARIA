@@ -6,7 +6,7 @@ var baixoOuAlto = document.querySelector('.baixoOuAlto');
 var envioPalpite = document.querySelector('.envioPalpite');
 var campoPalpite = document.querySelector('.campoPalpite');
 var contagemPalpites = 1;
-var botaoReinicio;
+var ButtonReset = document.querySelector('#resultado');
 campoPalpite.focus();
 function conferirPalpite() {
     var palpiteUsuario = Number(campoPalpite.value);
@@ -40,10 +40,7 @@ envioPalpite.addEventListener('click', conferirPalpite);
 function configFimDeJogo() {
     campoPalpite.disabled = true;
     envioPalpite.disabled = true;
-    botaoReinicio = document.createElement('button');
-    botaoReinicio.textContent = 'Iniciar novo jogo';
-    document.body.appendChild(botaoReinicio);
-    botaoReinicio.addEventListener('click', reiniciarJogo);
+    ButtonReset.addEventListener('click', reiniciarJogo);
 }
 function reiniciarJogo() {
     contagemPalpites = 1;
@@ -51,7 +48,6 @@ function reiniciarJogo() {
     for (var i = 0; i < reiniciarParas.length; i++) {
         reiniciarParas[i].textContent = '';
     }
-    botaoReinicio.parentNode.removeChild(botaoReinicio);
     campoPalpite.disabled = false;
     envioPalpite.disabled = false;
     campoPalpite.value = '';
