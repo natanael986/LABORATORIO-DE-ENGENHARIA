@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
     <!--<link rel="stylesheet" type="text/css" href="/stile.css" media="screen" />-->
+    <link href="/LABORATORIO-DE-ENGENHARIA/sidebars.css" rel="stylesheet">
+
 
     <style>
         .bd-placeholder-img {
@@ -50,7 +52,110 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <main id="BarNavegation">
+        <div class="flex-shrink-0 p-3 bg-whitem" style="width: 280px;">
+            <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html"
+                class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                <ion-icon class="customIcon" name="logo-web-component"></ion-icon>
+                <span class="fs-5 fw-semibold">LAB. </br>DE ENGENHARIA</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+                <li class="">
+                    <a class="nav-link" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">
+                        <ion-icon name="home-outline"></ion-icon>Inicio
+                    </a>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Atividades
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                    1º Bimestre
+                                </button>
+                                <div class="collapse" id="orders-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/desafio1/JogoAdivinha.html"
+                                                class="link-dark rounded">Adivinhe o número</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarData.html"
+                                                class="link-dark rounded">Mostrar Data</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarHora.html"
+                                                class="link-dark rounded">Mostrar a Hora em tempo real</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Palindromo/palindromo.html"
+                                                class="link-dark rounded">Palindromo</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/ArrayValor/arrayvalor.html"
+                                                class="link-dark rounded">Lista de valores</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula12-09/index_AT.1.html"
+                                                class="link-dark rounded">Animação de escrita</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                                    2º Bimestre
+                                </button>
+                                <div class="collapse" id="orders-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="#" class="link-dark rounded">Em breve...</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="border-top my-3"></li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#account-collapse" aria-expanded="false">
+                        <ion-icon name="logo-github"></ion-icon>GitHub
+                    </button>
+                    <div class="collapse" id="account-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"
+                                    class="link-dark rounded">Acessar</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <img class="myImg" src="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg" alt="sou eu natanael986">
+            </ul>
+            <ul class="PositionPlayerImg ">
+                <li class="playerFloatLeft">
+                    <a onclick="document.getElementById('player').play()">
+                        <ion-icon class="customIcon" name="play-circle-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="playerFloatLeft">
+                    <a onclick="document.getElementById('player').pause()">
+                        <ion-icon class="customIcon" name="pause-circle-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="playerFloatLeft">
+                    <a onclick="document.getElementById('player').volume+=0.1">
+                        <ion-icon class="customIcon" name="add-circle-outline"></ion-icon>
+                    </a>
+                </li>
+                <li class="playerFloatLeft">
+                    <a onclick="document.getElementById('player').volume-=0.1">
+                        <ion-icon class="customIcon" name="remove-circle-outline"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+            <audio class="sumirPlayer" id="player" controls="controls">
+                <source
+                    src="/LABORATORIO-DE-ENGENHARIA/musica/EVANGELION OPENING TRAP REMIX EXTENDED VERSION (a cruel angel thesis remix).mp4"
+                    type="audio/mp3" />
+            </audio>
+        </div>
+
+        <div class="b-example-divider"></div>
+
+    </main>
     <div class="positionTextLeft">
         <div class="">
 
