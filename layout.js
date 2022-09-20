@@ -1,3 +1,4 @@
 $(function () {
-    $("#header").load("/LABORATORIO-DE-ENGENHARIA/index.html");
-});
+    $("#header").load("/index.html");
+    $("#main").load("/main.html");
+ });

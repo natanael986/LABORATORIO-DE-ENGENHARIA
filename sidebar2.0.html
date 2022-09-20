@@ -51,26 +51,36 @@
 </head>
 
 <body>
-    <main id="BarNavegation">
-        <div class="flex-shrink-0 p-3 bg-whitem" style="width: 280px;">
-            <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html"
-                class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                <ion-icon class="customIcon" name="logo-web-component"></ion-icon>
-                <span class="fs-5 fw-semibold">LAB. </br>DE ENGENHARIA</span>
-            </a>
-            <ul class="list-unstyled ps-0">
-                <li class="">
-                    <a class="nav-link" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">
-                        <ion-icon name="home-outline"></ion-icon>Inicio
-                    </a>
-                </li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#dashboard-collapse" aria-expanded="false">
-                        Atividades
-                    </button>
-                    <div class="collapse" id="dashboard-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+    <header id="BarNavegation">
+        <div id="header"></div>
+        <nav class="navbar">
+            <div class="container-fluid border-bottom">
+                <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="d-flex text-decoration-none">
+                    <ion-icon class="customIcon" name="logo-web-component"></ion-icon>
+                    <span class="fs-5 fw-semibold">LAB. DE ENGENHARIA</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <ion-icon class="customIcon" name="menu-outline"></ion-icon>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Atividades</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <ul class=" list-unstyled fw-normal pb-1 small">
+                            <li class="border-top my-3"></li>
+                            <div class="Indice">
+                                <li class="align-items-center">
+                                    <a class="" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">
+                                        <ion-icon class="customIcon" name="home-outline"></ion-icon>
+                                    </a>
+                                </li>
+                            </div>
+                            <li class="border-top border-bottom my-4"></li>
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
                                     data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
@@ -104,64 +114,36 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="border-top my-3"></li>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                    <ion-icon name="logo-github"></ion-icon>GitHub
+                                </button>
+                                <div class="collapse" id="account-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"
+                                                class="link-dark rounded">Acessar Repositório</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
+
                     </div>
-                </li>
-                <li class="border-top my-3"></li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#account-collapse" aria-expanded="false">
-                        <ion-icon name="logo-github"></ion-icon>GitHub
-                    </button>
-                    <div class="collapse" id="account-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"
-                                    class="link-dark rounded">Acessar</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <img class="myImg" src="/img/foto.jpeg" alt="sou eu natanael986">
-            </ul>
-            <ul class="PositionPlayerImg ">
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').play()">
-                        <ion-icon class="customIcon" name="play-circle-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').pause()">
-                        <ion-icon class="customIcon" name="pause-circle-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').volume+=0.1">
-                        <ion-icon class="customIcon" name="add-circle-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').volume-=0.1">
-                        <ion-icon class="customIcon" name="remove-circle-outline"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-
-            <audio class="sumirPlayer" id="player" controls="controls">
-                <source
-                    src="/LABORATORIO-DE-ENGENHARIA/musica/EVANGELION OPENING TRAP REMIX EXTENDED VERSION (a cruel angel thesis remix).mp4"
-                    type="audio/mp3" />
-            </audio>
-        </div>
-
-        <div class="b-example-divider"></div>
-
-    </main>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container"><span id="main"></span></main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="/sidebars.js"></script>
+    <script src="layout.js""></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </body>
 
 </html>

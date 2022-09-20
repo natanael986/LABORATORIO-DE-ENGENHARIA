@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -122,13 +127,23 @@ main {
 
 /*Fixar Barra de Navegação*/
 #BarNavegation {
+  background-color: transparent;
   top: 0;
-  position: fixed;
+  padding: 0;
 }
+
+.MainText {
+  margin-top: 5rem;
+}
+
+.Indice {
+  margin-left: 184px;
+}
+
 
 /*Customizar minha imagem na barra*/
 .myImg {
-  width: 200px; 
+  min-width: 20px; 
   height: 200px;
   left: 15%;
   border-radius: 50%;
