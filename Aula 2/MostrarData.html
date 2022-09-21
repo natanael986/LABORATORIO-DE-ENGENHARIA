@@ -1,21 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
+<!--LEMBRAR DE COLOCAR NOS CAMINHOS "LABORATORIO-DE-ENGENHARIA/"-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="natanael986">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <link rel="icon" type="image/jpg" style="border-radius: 50%; " href="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg" />
 
     <title>Mostrar a Data</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css"
-        integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
-    <!--<link rel="stylesheet" type="text/css" href="/stile.css" media="screen" />-->
-    <link href="/LABORATORIO-DE-ENGENHARIA/sidebars.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
-
-    <link href="/LABORATORIO-DE-ENGENHARIA/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
 
 
 
@@ -38,41 +48,47 @@
         }
 
         .positionTextLeft {
-            position: absolute;
-            left: 40%;
-            top: 20%;
-            float: left;
-        }
-
-        .DataHeight {
-            font-size: 100px;
-            margin-right: 100px;
+            width: 100%;
+            font-size: 50px;
         }
     </style>
+
+    <!-- Custom styles for this template -->
+    <link href="/LABORATORIO-DE-ENGENHARIA/sidebars.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <main id="BarNavegation">
-        <div class="flex-shrink-0 p-3 bg-whitem" style="width: 280px;">
-            <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html"
-                class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                <ion-icon class="customIcon" name="logo-web-component"></ion-icon>
-                <span class="fs-5 fw-semibold">LAB. </br>DE ENGENHARIA</span>
-            </a>
-            <ul class="list-unstyled ps-0">
-                <li class="">
-                    <a class="nav-link" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">
-                        <ion-icon name="home-outline"></ion-icon>Inicio
-                    </a>
-                </li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#dashboard-collapse" aria-expanded="false">
-                        Atividades
-                    </button>
-                    <div class="collapse" id="dashboard-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+    <header id="">
+        <!--<div id="header"></div>-->
+        <nav class="navbar">
+            <div class="container-fluid border-bottom">
+                <a href="/LABORATORIO-DE-ENGENHARIA/inicio.html" class="d-flex text-decoration-none">
+                    <ion-icon class="customIcon" name="logo-web-component"></ion-icon>
+                    <span class="fs-5 fw-semibold">LAB. DE ENGENHARIA</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <ion-icon class="customIcon" name="menu-outline"></ion-icon>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Atividades</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div>
+                        <ul class=" list-unstyled fw-normal pb-1 small">
+                            <li class="border-top my-3"></li>
+                            <div class="Indice">
+                                <li class="align-items-center">
+                                    <a class="" aria-current="page" href="/LABORATORIO-DE-ENGENHARIA/inicio.html">
+                                        <ion-icon class="customIcon" name="home-outline"></ion-icon>
+                                    </a>
+                                </li>
+                            </div>
+                            <li class="border-top border-bottom my-4"></li>
                             <li class="mb-1">
                                 <button class="btn btn-toggle align-items-center rounded collapsed"
                                     data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
@@ -80,18 +96,18 @@
                                 </button>
                                 <div class="collapse" id="orders-collapse">
                                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/desafio1/JogoAdivinha.html"
-                                                class="link-dark rounded">Adivinhe o número</a></li>
-                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarData.html"
-                                                class="link-dark rounded">Mostrar Data</a></li>
-                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarHora.html"
-                                                class="link-dark rounded">Mostrar a Hora em tempo real</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/desafio1/JogoAdivinha.html" class="link-dark rounded">Adivinhe o
+                                                número</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarData.html" class="link-dark rounded">Mostrar
+                                                Data</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula 2/MostrarHora.html" class="link-dark rounded">Mostrar a Hora
+                                                em tempo real</a></li>
                                         <li><a href="/LABORATORIO-DE-ENGENHARIA/Palindromo/palindromo.html"
                                                 class="link-dark rounded">Palindromo</a></li>
-                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/ArrayValor/arrayvalor.html"
-                                                class="link-dark rounded">Lista de valores</a></li>
-                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula12-09/index_AT.1.html"
-                                                class="link-dark rounded">Animação de escrita</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/ArrayValor/arrayvalor.html" class="link-dark rounded">Lista
+                                                de valores</a></li>
+                                        <li><a href="/LABORATORIO-DE-ENGENHARIA/Aula12-09/index_AT.1.html" class="link-dark rounded">Animação de
+                                                escrita</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -106,75 +122,77 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li class="border-top my-3"></li>
+                            <li class="mb-1">
+                                <button class="btn btn-toggle align-items-center rounded collapsed"
+                                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                                    <ion-icon name="logo-github"></ion-icon>GitHub
+                                </button>
+                                <div class="collapse" id="account-collapse">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                        <li><a href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"
+                                                class="link-dark rounded">Acessar Repositório</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="myImg" src="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg" alt="">
+                            </li>
                         </ul>
-                    </div>
-                </li>
-                <li class="border-top my-3"></li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#account-collapse" aria-expanded="false">
-                        <ion-icon name="logo-github"></ion-icon>GitHub
-                    </button>
-                    <div class="collapse" id="account-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA"
-                                    class="link-dark rounded">Acessar</a></li>
+                        <ul>
+                            <div>
+                                <ul class="PositionPlayerImg ">
+                                    <li class="playerFloatLeft">
+                                        <a onclick="document.getElementById('player').play()">
+                                            <ion-icon class="customIcon" name="play-circle-outline"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li class="playerFloatLeft">
+                                        <a onclick="document.getElementById('player').pause()">
+                                            <ion-icon class="customIcon" name="pause-circle-outline"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li class="playerFloatLeft">
+                                        <a onclick="document.getElementById('player').volume+=0.1">
+                                            <ion-icon class="customIcon" name="add-circle-outline"></ion-icon>
+                                        </a>
+                                    </li>
+                                    <li class="playerFloatLeft">
+                                        <a onclick="document.getElementById('player').volume-=0.1">
+                                            <ion-icon class="customIcon" name="remove-circle-outline"></ion-icon>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <audio class="sumirPlayer" id="player" controls="controls">
+                                    <source
+                                        src="/LABORATORIO-DE-ENGENHARIA/musica/EVANGELION OPENING TRAP REMIX EXTENDED VERSION (a cruel angel thesis remix).mp4"
+                                        type="audio/mp3" />
+                                </audio>
+                            </div>
                         </ul>
+
                     </div>
-                </li>
-                <img class="myImg" src="/LABORATORIO-DE-ENGENHARIA/img/foto.jpeg" alt="sou eu natanael986">
-            </ul>
-            <ul class="PositionPlayerImg ">
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').play()">
-                        <ion-icon class="customIcon" name="play-circle-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').pause()">
-                        <ion-icon class="customIcon" name="pause-circle-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').volume+=0.1">
-                        <ion-icon class="customIcon" name="add-circle-outline"></ion-icon>
-                    </a>
-                </li>
-                <li class="playerFloatLeft">
-                    <a onclick="document.getElementById('player').volume-=0.1">
-                        <ion-icon class="customIcon" name="remove-circle-outline"></ion-icon>
-                    </a>
-                </li>
-            </ul>
-
-            <audio class="sumirPlayer" id="player" controls="controls">
-                <source
-                    src="/LABORATORIO-DE-ENGENHARIA/musica/EVANGELION OPENING TRAP REMIX EXTENDED VERSION (a cruel angel thesis remix).mp4"
-                    type="audio/mp3" />
-            </audio>
-        </div>
-
-        <div class="b-example-divider"></div>
-
-    </main>
-
-    <div class="container">
-        <div class="positionTextLeft">
-            <div class="DataHeight">
-                <p><span id="dia_se"></span>, <span id="dia"></span> de <span id="mes"></span> de <span id="ano"></span>
-                </p>
+                </div>
             </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p class="positionTextLeft" ><span id="dia_se"></span>, <span id="dia"></span> de <span id="mes"></span> de <span id="ano"></span>
+            </p>
         </div>
-    </div>
-
-    <script src="/LABORATORIO-DE-ENGENHARIA/bootstrap.bundle.min.js"></script>
-
-    <script src="/LABORATORIO-DE-ENGENHARIA/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/LABORATORIO-DE-ENGENHARIA/layout.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 
+    <!--<script src="./layout.js"></script>-->
+
+    <script src=" //code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 
 </body>
 

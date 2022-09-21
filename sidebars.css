@@ -1,8 +1,8 @@
-* {
+/** {
   margin: 0;
   padding: 0;
-}
-
+}*/
+m,
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -121,39 +121,46 @@ main {
   float: left;
   list-style: none;
 }
+
 .sumirPlayer {
   display: none;
 }
 
-/*Fixar Barra de Navegação*/
-#BarNavegation {
-  background-color: transparent;
-  top: 0;
-  padding: 0;
-}
-
-.MainText {
-  margin-top: 5rem;
-}
-
-.Indice {
-  margin-left: 184px;
-}
 
 
 /*Customizar minha imagem na barra*/
 .myImg {
-  min-width: 20px; 
-  height: 200px;
-  left: 15%;
-  border-radius: 50%;
-  position: absolute;
-  bottom: 100px;
+  min-width: 50px;
+  max-width: 100px;
+  min-height: 50px;
+  max-height: 100px;
+
+  border-radius: 20%;
+  margin-left: 150px;
+  margin-top: 30px;
 }
 
 /*Posição do player e imagem*/
 
+.ImgHeight {
+  width: 100%;
+}
+
+.ImgSvg {
+  width: 100%;
+}
+
 .PositionPlayerImg {
-  position: absolute;
-  bottom: 10px;
+  margin-left: 42px;
+}
+
+main {
+  background-color: #1fcef12f;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+
+  min-width: 320px;
+  max-width: 800px;
 }
