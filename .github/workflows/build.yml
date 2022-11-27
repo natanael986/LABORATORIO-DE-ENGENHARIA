@@ -3,9 +3,9 @@ name: Deploy Exercicio Tabuada
 on:
     # Trigger the workflow on push of pull request events but only for the main branch
     push:
-        branches: [ master ]
+        branches: [ main ]
     pull_request:
-        branches: [ master ]
+        branches: [ main ]
 
 jobs:
     build:
