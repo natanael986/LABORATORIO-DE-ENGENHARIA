@@ -30,16 +30,15 @@ button:hover{
 
 .VisorCalculadora {
     background-color: gray;
-    margin-top: -40px;
     border-radius: 1rem;
-}
-
-.ButtonCalculadora {
-    margin-top: -40px;
 }
 
 .orange{
     background-color: #FF9500;
+    color: white;
+}
+.orange:hover{
+    background-color: #e9ad59;
     color: white;
 }
 .IgualCalculadora{
@@ -51,6 +50,10 @@ button:hover{
 
 .gray{
     background-color: #505050;
+    color: white;
+}
+.gray:hover{
+    background-color: #8a8888;
     color: white;
 }
 .result{
