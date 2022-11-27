@@ -1,0 +1,20 @@
+{
+  "name": "laboratorio-de-engenharia",
+  "homepage": "https://natanael986.github.io/LABORATORIO-DE-ENGENHARIA/",
+  "version": "1.0.0",
+  "description": "<html lang=\"pt-br\">",
+  "main": "layout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA/issues"
+  },
+  "homepage": "https://github.com/natanael986/LABORATORIO-DE-ENGENHARIA#readme"
+}
