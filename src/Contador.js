@@ -1,30 +1,28 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 
-class Contador extends React.Component {
-    constructor(props) {
+class Contador extends React.Component{
+    constructor(props){
         super(props);
-        this.state = { segundos: 0 }
+        this.state = {segundos: 0}
     }
-
-    tick() {
-        this.setState({ segundos: this.state.segundos + 1 })
+    thick(){ // Método para adicionar os segundo no contador.
+        this.setState({segundos: this.state.segundos +1})
     }
-
-    componentDidMount() {
-        this.interval = setInterval(() => this.tick(), 1000)
+    componentDidMount(){
+        this.interval = setInterval(()=> this.thick(), 1000)
     }
-
-    componentWillUnmount() {
+    componentWillUnmount(){
         clearInterval(this.interval)
     }
-
-    render() {
-        return (
+    render(){
+        return(
             <div>
                 <p>Segundos: {this.state.segundos}</p>
             </div>
-        );
+        )
     }
 }
+
 
 export default Contador;

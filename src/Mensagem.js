@@ -1,19 +1,14 @@
-import React from "react";
+import React from 'react';
 
 class Mensagem extends React.Component {
-    
-    exibir = (m) => {
-        console.log(m);
+    shoot = (t) => {
+        console.log(t);
     }
-
+    
     render() {
-        const msg ="Olá mundo";
         return (
-            <div>
-                <button type="button" onClick={()=>this.exibir(msg)}>Mensagem</button>            
-            </div>
+            <button onClick={()=>this.shoot("Olá Mundo")}> Clique</button>
         );
     }
 }
-
 export default Mensagem;

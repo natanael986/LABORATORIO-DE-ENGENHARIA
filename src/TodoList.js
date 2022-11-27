@@ -1,18 +1,15 @@
-import React from "react";
+import React from 'react';
 
-class TodoList extends React.Component {
-    constructor(props) {
+class TodoList extends React.Component{
+    constructor(props){
         super(props);
-        this.state = {
-            itens: [],
-            text: ''
-        }
+
     }
 
-
-    render() {
-        return (
+    render(){
+        return(
             <div>
+                <h1>Tarefas</h1>
                 <ul>
                     {this.props.itens.map(
                         item => (<li key={item.id}>{item.text}</li>)
