@@ -1,0 +1,2 @@
+ssh-keygen -t rsa -b 4096 -C "$(git config user.email)" -f "gh-pages" -N ""
+git config --global user.email ""
