@@ -1,4 +1,4 @@
-name: Deploy Exercicio Tabuada
+name: Deploy Exercicio Engenharia
 # Controls when the action will run.
 on:
     # Trigger the workflow on push of pull request events but only for the main branch
