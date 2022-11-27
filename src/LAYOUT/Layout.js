@@ -1,60 +1,52 @@
 import '../CSS/Styles.css';
 import './Layout.css'
 import React from 'react';
+import Calculadora from '../CALCULADORA/Calculadora';
+import Extras from '../EXTRAS/Extras';
+import ExibirTabuada from '../TABUADA/ExibirTabuada';
+import ExibirContador from '../CONTADOR/ExibirContador';
+import ExibirComponente from '../VIDA_UTIL_COMPONENTE/ExibirComponentes';
+import ExibirTODOList from '../TO_DO_LIST/ExibirTODOList';
 
-class Layout extends React.Component {
+export default class Layout extends React.Component {
     render() {
         return (
-            <nav class="navbar navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">LAB. ENGENHARIA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ATIVIDADES</h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="row">
+                <div class="col-2">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action list-item" href="#list-item-1">Calculadora</a>
+                        <a class="list-group-item list-group-item-action list-item" href="#list-item-2">Extras</a>
+                        <a class="list-group-item list-group-item-action list-item" href="#list-item-3">Tabuada</a>
+                        <a class="list-group-item list-group-item-action list-item" href="#list-item-4">Contar segundos</a>
+                        <a class="list-group-item list-group-item-action list-item" href="#list-item-5">Vida util do componente</a>
+                        <a class="list-group-item list-group-item-action list-item" href="#list-item-6">To do List</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <div id="list-item-1">
+                            <Calculadora />
                         </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                                </li>
-                                <li class="mb-1">
-                                    <button class="Botao btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse1" aria-expanded="false">
-                                        1º Bimestre
-                                    </button>
-                                    <div class="collapse" id="home-collapse1">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                            <li><a href="#" class="link-dark rounded">Adivinhe o número</a></li>
-                                            <li><a href="#" class="link-dark rounded">Mostrar Data</a></li>
-                                            <li><a href="#" class="link-dark rounded">Hora/Tempo Real</a></li>
-                                            <li><a href="#" class="link-dark rounded">Palindromo</a></li>
-                                            <li><a href="#" class="link-dark rounded">Lista de Valores</a></li>
-                                            <li><a href="#" class="link-dark rounded">Animação de escrita</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="mb-1">
-                                    <button class="Botao btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                                        2º Bimestre
-                                    </button>
-                                    <div class="collapse" id="home-collapse">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                            <li><a href="#" class="link-dark rounded">Overview</a></li>
-                                            <li><a href="#" class="link-dark rounded">Updates</a></li>
-                                            <li><a href="#" class="link-dark rounded">Reports</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div id="list-item-2">
+                            <Extras />
+                        </div>
+                        <div id="list-item-3">
+                            <ExibirTabuada />
+                        </div>
+                        <div id="list-item-4">
+                            <ExibirContador />
+                        </div>
+                        <div id="list-item-5">
+                            <ExibirComponente />
+                        </div>
+                        <div id="list-item-6">
+                            <ExibirTODOList />
                         </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         )
     }
 }
 
-export default Layout;
+

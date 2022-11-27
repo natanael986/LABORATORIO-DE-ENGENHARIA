@@ -5,7 +5,7 @@ import Layout from './LAYOUT/Layout';
 function App() {
   return (
     <div>
-      <Layout/>
+      <Layout />
     </div>
   );
 }

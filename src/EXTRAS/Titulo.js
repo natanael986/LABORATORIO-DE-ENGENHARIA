@@ -12,11 +12,11 @@ class Titulo extends React.Component {
   render() {
     return (
       <div>
-        <div className="MenuPopDownLista">
+        <div>
           <ul>
             <li>Titulos e Links</li>
           </ul>
-          <div className="MenuDisplayLista">
+          <div>
             <h1>{this.state.titulo}</h1>
             <p>{this.state.texto}</p>
             <a href={this.state.link}>{this.state.link}</a>

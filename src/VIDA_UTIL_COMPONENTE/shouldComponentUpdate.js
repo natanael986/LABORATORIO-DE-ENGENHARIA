@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Counter1 from "../CONTADOR/Counter1";
-import Counter2 from "../CONTADOR/Counter2";
+import Counter1 from "./Counter1";
+import Counter2 from "./Counter2";
 
 // O método shouldComponentUpdate nos permite sair do
 //  ciclo de vida de atualização de reação complexo para

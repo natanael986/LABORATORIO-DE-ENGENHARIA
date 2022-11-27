@@ -25,11 +25,11 @@ class Cores extends React.Component {
     render() {
         return (
             <div>
-                <div className="MenuPopDownLista">
+                <div>
                     <ul>
                         <li>Mudar cor Texto</li>
                     </ul>
-                    <div className="MenuDisplayLista">
+                    <div>
                         <h1 style={{ color: this.state.valor_cor }}>Cor: {this.state.nome_cor}</h1>
                         <button type="button" onClick={this.changeColor}>Botão</button>
                     </div>
