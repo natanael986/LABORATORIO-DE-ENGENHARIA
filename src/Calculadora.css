@@ -1,0 +1,61 @@
+button{
+    width: 3em;
+    height: 3em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 2em;
+    margin: 0.3em;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.TituloCalculadora{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.CalculadoraPosition{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width: 350px;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.VisorCalculadora {
+    background-color: gray;
+    margin-top: -40px;
+    border-radius: 1rem;
+}
+
+.ButtonCalculadora {
+    margin-top: -40px;
+}
+
+.orange{
+    background-color: #FF9500;
+    color: white;
+}
+.IgualCalculadora{
+    width: 160px;
+    float: right;
+    position: absolute;
+    margin-left: -80px;
+}
+
+.gray{
+    background-color: #505050;
+    color: white;
+}
+.result{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size:3.5em;
+}
