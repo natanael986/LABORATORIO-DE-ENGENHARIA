@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/project-engenharia-react/static/css/main.056e07d8.css",
-    "main.js": "/project-engenharia-react/static/js/main.7e30d04f.js",
-    "index.html": "/project-engenharia-react/index.html",
-    "main.056e07d8.css.map": "/project-engenharia-react/static/css/main.056e07d8.css.map",
-    "main.7e30d04f.js.map": "/project-engenharia-react/static/js/main.7e30d04f.js.map"
+    "main.css": "/LABORATORIO-DE-ENGENHARIA/static/css/main.056e07d8.css",
+    "main.js": "/LABORATORIO-DE-ENGENHARIA/static/js/main.7e30d04f.js",
+    "index.html": "/LABORATORIO-DE-ENGENHARIA/index.html",
+    "main.056e07d8.css.map": "/LABORATORIO-DE-ENGENHARIA/static/css/main.056e07d8.css.map",
+    "main.7e30d04f.js.map": "/LABORATORIO-DE-ENGENHARIA/static/js/main.7e30d04f.js.map"
   },
   "entrypoints": [
     "static/css/main.056e07d8.css",
