@@ -10,7 +10,7 @@ class Cores extends React.Component {
     }
 
     changeColor = () => {
-        if (this.state.valor_cor == "#FF0084") {
+        if (this.state.valor_cor === "#FF0084") {
             this.setState({ nome_cor: "Rosa" });
             this.setState({ nome_cor: "Azul" });
             this.setState({ valor_cor: "#005B8F" });
